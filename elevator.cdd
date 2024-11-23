@@ -1,0 +1,54 @@
+5 18 1fd81 10090859 3 ffffffff *
+8 /home/muddu/elevator_controller 2 -t (elevator_tb) 2 -v (elevator_tb.v) 2 -v (elevator.v) 2 -vcd (elevator.vcd) 2 -o (elevator.cdd)
+3 0 $root "$root" 0 NA 0 0 100000000000000 
+3 0 elevator_tb "elevator_tb" 0 elevator_tb.v 2 55 1000 
+1 request_floor 1 4 70009 1 0 7 0 8 17 0 ff 0 0 0 0
+1 in_current_floor 2 5 70009 1 0 7 0 8 17 0 ff 0 0 0 0
+1 clk 3 6 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 reset 4 7 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 over_time 5 8 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 over_weight 6 9 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 direction 7 11 60005 1 0 0 0 1 17 1 1 0 0 1 0
+1 complete 8 12 60005 1 0 0 0 1 17 1 1 0 1 0 0
+1 door_alert 9 13 60005 1 0 0 0 1 17 1 1 0 1 1 0
+1 weight_alert 10 14 60005 1 0 0 0 1 17 1 1 0 1 1 0
+1 out_current_floor 11 15 6000b 1 0 7 0 8 17 ff ff 0 7f fe 0
+7 4 53 53
+3 0 elevator "elevator_tb.UUT" 0 elevator.v 1 82 1000 
+2 1 77 77 77 11001b 2 1 100c 0 0 1 1 r_direction
+2 2 77 77 77 7000f 0 1 1410 0 0 1 1 direction
+2 3 77 77 77 7001b 3 35 e 1 2
+2 4 78 78 78 100019 2 1 100c 0 0 1 1 r_complete
+2 5 78 78 78 7000e 0 1 1410 0 0 1 1 complete
+2 6 78 78 78 70019 3 35 e 4 5
+2 7 79 79 79 12001d 3 1 100c 0 0 1 1 r_door_alert
+2 8 79 79 79 70010 0 1 1410 0 0 1 1 door_alert
+2 9 79 79 79 7001d 4 35 e 7 8
+2 10 80 80 80 140021 3 1 100c 0 0 1 1 r_weight_alert
+2 11 80 80 80 70012 0 1 1410 0 0 1 1 weight_alert
+2 12 80 80 80 70021 4 35 e 10 11
+2 13 81 81 81 1a002c 8 1 1008 0 0 8 1 r_out_current_floor
+2 14 81 81 81 70017 0 1 1410 0 0 8 1 out_current_floor
+2 15 81 81 81 7002c 9 35 a 13 14
+1 request_floor 12 5 b 1 0 7 0 8 17 ff ff 0 0 0 0
+1 in_current_floor 13 6 b 1 0 7 0 8 17 ff ff 0 0 0 0
+1 clk 14 7 6 1 0 0 0 1 17 1 1 0 1 1 0
+1 reset 15 8 6 1 0 0 0 1 17 1 1 0 1 1 0
+1 over_time 16 9 6 1 0 0 0 1 17 1 1 0 1 1 0
+1 over_weight 17 10 6 1 0 0 0 1 17 1 1 0 1 1 0
+1 direction 18 14 20007 1 0 0 0 1 17 1 1 0 0 1 0
+1 complete 19 15 20007 1 0 0 0 1 17 1 1 0 1 0 0
+1 door_alert 20 16 20007 1 0 0 0 1 17 1 1 0 1 1 0
+1 weight_alert 21 17 20007 1 0 0 0 1 17 1 1 0 1 1 0
+1 out_current_floor 22 18 2000d 1 0 7 0 8 17 ff ff 0 7f fe 0
+1 r_direction 23 21 70004 1 0 0 0 1 17 0 1 0 0 1 0
+1 r_complete 24 22 70004 1 0 0 0 1 17 0 1 0 1 0 0
+1 r_door_alert 25 23 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 r_weight_alert 26 24 70004 1 0 0 0 1 17 0 1 0 1 1 0
+1 r_out_current_floor 27 25 7000a 1 0 7 0 8 17 0 ff 0 7f fe 0
+4 3 f 3 3 3
+4 6 f 6 6 6
+4 9 f 9 9 9
+4 12 f 12 12 12
+4 15 f 15 15 15
+7 0 28 29
