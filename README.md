@@ -6,4 +6,4 @@ OpenSTA # for sta :
 Yosys # for synthesis :
 OpenROAd # for physical design : 
 
-In project I used Nangateopencelllibrary.lib as technology file for synthesis and for physical design I used nangate45(45nm) as technology file
+In this project I used Nangateopencelllibrary.lib as technology file for synthesis and for physical design I used nangate45.lib(45nm) as technology file
